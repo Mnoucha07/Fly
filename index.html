@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stayle.css" />
+    <title>Fly with us</title>
+  </head>
+  <body>
+    
+   
+  <header>
+    <div class="logo" > MonAgence</div>
+     <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav id="nav">
+      <a href="#">Accueil</a>
+      <a href="#">Services</a>
+      <a href="Login.html">Se connecter</a>
+      <a href="#reserve">Réserver</a>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <h1>Bienvenue chez MonAgence</h1>
+    <p>Voyagez avec nous et découvrez le monde </p>
+    <a href="#reserve" class="btn">Réserver Maintenant</a>
+  </section>
+
+ 
+  <section class="services">
+    <h2>Nos Services</h2>
+    <div class="service-list">
+      <div class="service"> Billets d'avion</div>
+      <div class="service"> Réservation d'hôtels</div>
+      <div class="service"> Location de voitures</div>
+    </div>
+  </section>
+
+  
+<section class="reserve" id="reserve">
+  <h2>Réserver avec nous </h2>
+  <form>
+    <div class="input-group">
+      <input type="text" id="name" required>
+      <label for="name">Votre Nom</label>
+    </div>
+    <div class="input-group">
+      <input type="email" id="email" required>
+      <label for="email">Votre Email</label>
+    </div>
+    <div class="input-group">
+      <input type="date" id="date" required>
+      <label for="date">Date</label>
+    </div>
+    <button type="submit">Réserver</button>
+  </form>
+</section>
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav");
+
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>
+</body>
+
+  
