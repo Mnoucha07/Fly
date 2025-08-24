@@ -119,3 +119,16 @@ body {
 .register-link a:hover {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+ 
+
+  .remember-forget {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .register-link {
+    font-size: 13px;
+  }
+}
+
